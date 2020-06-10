@@ -1,0 +1,9 @@
+.ant-form-item {
+  padding: 0 20px 0 20px !important;
+}
+
+.ant-form-item-label {
+    white-space: normal !important;
+    height: 40px;
+    padding: 4px;
+}

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Layout } from 'antd';
-import AppHeader from "./components/AppHeader";
+import { Typography } from 'antd';
 import AppContent from './components/AppContent';
-const { Content } = Layout;
+
+const { Title } = Typography;
 
 export default class App extends Component {
 
@@ -18,8 +18,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <AppHeader title="ГБПОУ РК Петрозаводский лесотехнический техникум" subTitle="Приёмная комиссия 2020" />
-        <AppContent></AppContent>
+        <div style={{ margin: '20px' }}>
+          <Title level={3}>ГБПОУ РК Петрозаводский лесотехнический техникум</Title>
+          <Title level={4}>Приёмная комиссия 2020</Title>
+        </div>
+        <AppContent />
       </div>
     )
   }
